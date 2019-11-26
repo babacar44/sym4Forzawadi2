@@ -1,0 +1,9 @@
+composer require friendsofsymfony/rest-bundle
+composer require serializer
+composer require server
+composer require symfony/maker-bundle --dev
+ composer require orm
+ php bin/console doctrine:schema:update --force
+ composer require jms/serializer-bundle
+ bin/console doctrine:schema:update --force 
+ bin/console config:dump-reference fos_rest
